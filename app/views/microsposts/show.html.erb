@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @microspost %>
+
+<div>
+  <%= link_to "Edit this microspost", edit_microspost_path(@microspost) %> |
+  <%= link_to "Back to microsposts", microsposts_path %>
+
+  <%= button_to "Destroy this microspost", @microspost, method: :delete %>
+</div>
